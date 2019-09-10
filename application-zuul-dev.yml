@@ -15,6 +15,8 @@ zuul:
     es.path: /es/** # 把es打头的所有请求都转发给hrm-es
     redis.serviceId: hrm-redis # 服务名
     redis.path: /redis/** # 把redis打头的所有请求都转发给hrm-redis
+    page.serviceId: hrm-page # 服务名
+    page.path: /page/** # 把page打头的所有请求都转发给hrm-page
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
   retryable: true #是否重试
