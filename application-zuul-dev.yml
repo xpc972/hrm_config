@@ -19,6 +19,8 @@ zuul:
     page.path: /page/** # 把page打头的所有请求都转发给hrm-page
     pageAgent.serviceId: hrm-page-agent # 服务名
     pageAgent.path: /pageAgent/** # 把pageAgent打头的所有请求都转发给hrm-page-agent
+    user.serviceId: hrm-user # 服务名
+    user.path: /user/** # 把user打头的所有请求都转发给hrm-user
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
   retryable: true #是否重试
